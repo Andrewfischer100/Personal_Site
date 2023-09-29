@@ -3,24 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="styles.css">
-    <link rel ="stylesheet" href="mediaqueries.css">
-    <title>My Portfolio</title>
+    <title>Andrew Fischer - Designer & Developer</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
 </head>
 <body>
-    <nav id = "desktop_nav">
-        <div class = "logo">Andy Fischer</div>
-        <div>
-            <ul class = "nav-links">
-                <li><a href = "#about">about</a></li>
-                <li><a href = "#Experience">Experience</a></li>
-                <li><a href = "#Projects">Projects</a></li>
-                <li><a href = "#Contact">Contact</a></li>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Hi. I'm Andrew Fischer.</h1>
+        <p>I'm a designer and developer.</p>
+        <p>I build websites from scratch or using CMS platforms like WordPress and WebFlow.</p>
+        <a href="#portfolio" class="cta-button">View My Work</a>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <!-- Add your portfolio projects here using HTML/CSS -->
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="process_contact_form.php" method="POST"> <!-- Replace with your actual form processing script -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    Howdy
-<script src = "script.js"></script>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Insert your about me content here.</p>
+        <a href="#contact" class="cta-button">Hire Me</a>
+    </section>
+    <footer>
+        <div class="contact-info">
+            <p>Andrew Fischer</p>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="social-links">
+            <a href="https://linkedin.com/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+            <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+        </div>
+    </footer>
 </body>
 </html>
